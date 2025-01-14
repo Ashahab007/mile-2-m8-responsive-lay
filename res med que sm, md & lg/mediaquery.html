@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .image {
+        border: 2px solid rgba(128, 128, 128, 0.35);
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .image img {
+        border-radius: 5px;
+        width: 100%;
+      }
+      /* for smaller device */
+      @media screen and (max-width: 576px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 992px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+    <title>Media Query</title>
+  </head>
+  <body>
+    <!-- .container>.image*12>img[src="../respon-use-media-query/images/foods.webp"]+p{Price \$4.01}+h4{My Food $}+p>lorem15^btn{Buy Now} -->
+
+    <div class="container">
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+          earum dolor placeat et labore cum.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 2</h4>
+        <p>
+          Similique beatae repellat amet, suscipit sapiente odio quas soluta
+          possimus. Voluptas harum deleniti eum facilis.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 3</h4>
+        <p>
+          Nulla reiciendis ad ratione officiis vel nisi autem, dolor quisquam
+          cum perspiciatis aliquid voluptatem eligendi.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 4</h4>
+        <p>
+          Quam consectetur eum, non nulla tempore harum a autem rem optio esse
+          sint amet necessitatibus.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 5</h4>
+        <p>
+          Nam, magni assumenda voluptate dolorem quo corporis culpa laudantium
+          iusto earum rerum distinctio exercitationem nisi!
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 6</h4>
+        <p>
+          Facere ducimus voluptas laborum at nam cum aspernatur laboriosam magni
+          voluptates quaerat. Veritatis, iusto sint!
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 7</h4>
+        <p>
+          Neque accusamus, odio earum esse eius nisi quibusdam aliquid enim
+          asperiores suscipit sit veritatis quidem.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 8</h4>
+        <p>
+          Maiores voluptatem impedit voluptas doloremque laborum? Tenetur ex,
+          quisquam ducimus harum nihil maxime corporis in!
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 9</h4>
+        <p>
+          Molestiae fugiat possimus nam? Debitis repellat quibusdam consectetur
+          quasi laudantium temporibus est iste adipisci dolor?
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 10</h4>
+        <p>
+          Molestiae, possimus quasi porro totam ipsum debitis odio accusantium
+          animi non nobis consectetur dolore neque.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 11</h4>
+        <p>
+          Consectetur officia eum labore, culpa ullam, eos deleniti officiis
+          aspernatur odit recusandae, ratione ab pariatur!
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../respon-use-media-query/images/foods.webp" alt="" />
+        <p>Price $4.01</p>
+        <h4>My Food 12</h4>
+        <p>
+          Minus impedit deleniti sunt. Hic id atque natus, quia illo sit eveniet
+          possimus earum laboriosam.
+        </p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>
