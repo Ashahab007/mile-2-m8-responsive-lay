@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        max-width: 1140px; /*Here max width is used for making the body responsive (it is the part of a responsive design). Because without the max width you cannot align the body in center position using margin.*/
+        border: 2px solid skyblue;
+        margin: 0 auto;
+      }
+
+      .container {
+        display: flex;
+        gap: 1rem;
+        /* justify-content: center; */
+      }
+
+      .container div {
+        width: 50%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .container div {
+          width: 100%;
+        }
+
+        div img {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>Responsive Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>7 Things you need to do a website responsive</h1>
+      <ol>
+        <li>Viewport meta tag</li>
+        <li>Use CSS Relative Unit</li>
+        <li>body max width and horizontal center align</li>
+        <li>Image fluid</li>
+        <li>two column flex and use media query with flex direction column</li>
+        <li>Multi column: Grid Layout</li>
+        <li>Menu responsive: Will need Javascript</li>
+      </ol>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="im">
+          <img src="../respon-use-media-query/images/foods.webp" />
+        </div>
+        <div class="im">
+          <img src="./images/vegetables.webp" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
